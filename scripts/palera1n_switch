@@ -22,12 +22,14 @@ case "$jbtype" in
     echo "Rootful selected"
     echo "Rootful" > /usr/bin/.jbtype
     rm -r /usr/bin/.args
+    echo "-v -V" > /usr/bin/.args
     /usr/bin/palera1n_menu
     ;;
   "Rootless")
     echo "Rootless selected"
     echo "Rootless" > /usr/bin/.jbtype
     rm -r /usr/bin/.args
+    echo "-v -V" > /usr/bin/.args
     /usr/bin/palera1n_menu
     ;;
 esac
